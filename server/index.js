@@ -11,8 +11,6 @@ app.use(cors(
             "http://localhost:5174",
             "http://localhost:3000",
             "http://98.82.114.28:5174",
-            
-            
         ],
         credentials:true,
     }
@@ -29,6 +27,6 @@ app.get("/api/message",(req,res)=>{
 
 
 
-app.listen(PORT,"0.0.0.0",()=> {
+app.listen(PORT,()=> {
     console.log(`Server is running at http://localhost:${PORT}`)
 })
